@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>C++ Server</title>
+
+</head>
+
+<body id="page-top">
+    <h2>
+        Following steps are there to start the server:
+    </h2>
+    <ul>
+        <li>go to folder C++ Server</li>
+        <li>Run the command "g++ main.cpp"</li>
+        <li>An executable file with name a.out will be created</li>
+        <li>Run executable file with command "./a.out"</li>
+        <li>The server will start on port 8080</li>
+        <li>Go to browser and see the output after calling appropriate url</li>
+      </ul>
+
+    <h2>
+        Following steps are there to create the server:
+    </h2>
+    <ul>
+        <li>made a system call to get file descryptor of socket</li>
+        <li>Bind system call is made to bind socket to PORT 8080</li>
+        <li>Listen system call with max_connection 10,000 is made to allow listening upto 10,000 requests concurrently</li>
+        <li>Run executable file with command "./a.out"</li>
+        <li>Accept system call is made so that the request can be take from listening queue</li>
+        <li>Fork system call is made create a child process and send back the HTML file</li>
+      </ul>
+    
+    <h2>
+        Following features are implemented
+    </h2>
+    <ul>
+        <li>Proper error check at every step</li>
+        <li>Listening upto 10,000 request concurrently</li>
+        <li>On any request a html file is sent</li>
+      </ul>
+
+</body>
+
+</html>
